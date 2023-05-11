@@ -54,6 +54,6 @@ Extract events of the last year, and run the script in the background:
 `nohup python3 CB.py --query device_name:server-x --window='-1y' &`
 
 &nbsp;
-## known issues
+## Limitations
 
 - Script is not suitable for extracting Carbon Black Cloud events of 1000's of systems. If you want to do that forward to an S3 bucket.
