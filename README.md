@@ -8,9 +8,9 @@ This Python3 script extracts events from the Carbon Black Cloud. It currently su
 &nbsp;
 ## Use cases
 
-- Extracting all events of one system for an offline investigation
-- Extracting process events with parameters as it is not feassible using the GUI
-- Extracting detailed events: netconn, filemod, modload, childproc, crossproc
+- Extracting detailed Carbon Black Cloud events
+- Conduct timeline analysis of adversary behaviour using Carbon Black Cloud events
+- Store Carbon Black Cloud events offline for later investigation
 - Probably more
 
 &nbsp;
