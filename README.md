@@ -3,6 +3,8 @@
 
 This Python3 script extracts events from the Carbon Black Cloud. It currently supports extracting EnrichedEvents, Process information, and Process Events (modload, filemod, netconn, childproc, crossproc). It outputs the result to both CSV and JSON.
 
+![](example.gif)
+
 &nbsp;
 ## Use cases
 
