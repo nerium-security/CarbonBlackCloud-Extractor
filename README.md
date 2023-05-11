@@ -56,5 +56,4 @@ Extract events of the last year, and run the script in the background:
 &nbsp;
 ## known issues
 
-- Due to API limitations the end-count differs of extracted process events (netconn, filemod etc). This issue was logged at VMware but until date no solution was provided.
-- Script is not suitable for extracting all Carbon Black Cloud events for each and every system. If you want to do that forward to an S3 bucket.
+- Script is not suitable for extracting events of 1000's of systems from Carbon Black Cloud. If you want to do that forward to an S3 bucket.
