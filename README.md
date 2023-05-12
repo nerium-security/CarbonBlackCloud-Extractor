@@ -1,5 +1,5 @@
 
-# Carbon Black Cloud extractor
+# Carbon Black Cloud Telemetry Extractor
 
 This Python3 script extracts events from the Carbon Black Cloud. It currently supports extracting EnrichedEvents, Process information, and Process Events (modload, filemod, netconn, childproc, crossproc). 
 
@@ -59,6 +59,10 @@ Extract only events of the type ProcessEvents:
 Extract events of the last year, and run the script in the background:
 
 `nohup python3 CB.py --query device_name:server-x --window='-1y' &`
+
+&nbsp;
+## Feedback
+If you have any feedback or experiencing an issue, let us know by opening an issue.
 
 &nbsp;
 ## Limitations
