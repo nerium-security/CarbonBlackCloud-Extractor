@@ -63,4 +63,4 @@ Extract events of the last year, and run the script in the background:
 &nbsp;
 ## Limitations
 
-The script is not suitable for extracting Carbon Black Cloud events of 1000's of systems. If you want to do that forward to an S3 bucket.
+The script is not suitable for extracting Carbon Black Cloud events of 1000's of systems. If you want to do that forward to an S3 bucket, and extract it from there.
