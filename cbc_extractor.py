@@ -372,7 +372,7 @@ def readcredsfile():
     try:
         cb = CBCloudAPI(profile='default')
     except Exception as e:
-        log.error('Could not load variables from %s file. Error: %s' % e)
+        log.error('Could not load API credentials. Error: %s' %  e)
         log.info('Script will exit')
         exit()
 
