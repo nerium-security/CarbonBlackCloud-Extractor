@@ -307,6 +307,7 @@ def async_query(cb, starttime, endtime, query, eventtype, jobnr):
 
             except Exception as e:
                 log.error('Error when retrieving event of type %s from query %s: %s' % (eventtype_original, jobnr, e) )
+                breakpoint()
 
             if eventtype_original == 'ProcessEvent':
                 for i in event.events():
@@ -314,12 +315,14 @@ def async_query(cb, starttime, endtime, query, eventtype, jobnr):
                         i = i.original_document
                         fields = ['netconn_remote_ipv4','netconn_local_ipv4']
                         for field in fields:
-                            if i.get(field) and type(int):
+                            ip_field = i.get(field)
+                            if isinstance(ip_field, int):
                                 ipstr = to_string(i[field])
                                 log.debug('Query %s. Converting %s to %s.' % (jobnr, i[field], ipstr))
                                 i[field] = ipstr
                         data.append(i)
                     except Exception as e:
+                        breakpoint()
                         log.error('Error when retrieving event of type ProcessEvent of query %s: %s' % (jobnr, e) )
 
     if maximum_count == 10000:
