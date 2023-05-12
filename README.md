@@ -5,7 +5,7 @@ This Python3 script extracts events from the Carbon Black Cloud. It currently su
 
 ![](example.gif)
 
-The result is outputed to both CSV and JSON.
+The result is outputed to both CSV and JSON:
 
 - 2023-05-11_143617_results_EnrichedEvent.csv
 - 2023-05-11_143617_results_ProcessEvent.csv
